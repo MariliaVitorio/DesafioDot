@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "cypress": "^14.5.2"
+  },
+  "dependencies": {
+    "update": "^0.7.4"
+  },
+  "name": "desafiodot",
+  "version": "1.0.0",
+  "description": "Repositório de automação de testes end-to-end com Cypress aplicado ao site amazon.com.br, criado como parte de um desafio técnico.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariliaVitorio/DesafioDot.git"
+  },
+  "keywords": [],
+  "author": "Marilia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariliaVitorio/DesafioDot/issues"
+  },
+  "homepage": "https://github.com/MariliaVitorio/DesafioDot#readme"
+}
