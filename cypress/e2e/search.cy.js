@@ -1,12 +1,12 @@
 describe('Busca na Amazon', () => {
-    it('Realiza uma busca válida', () => {
+    it('Realizar uma busca válida', () => {
         cy.start()
 
         cy.get('#twotabsearchtextbox').click()
             .type('blusa crochê inverno');
 
         cy.get('#nav-search-submit-button').click()
-   
+
         cy.get('span.a-color-state.a-text-bold')
             .should('contain.text', 'blusa crochê inverno');
 
@@ -14,19 +14,17 @@ describe('Busca na Amazon', () => {
             .should('be.visible').click();
 
         cy.get('#productTitle').should('exist');
-   
     });
 
-    it('Realiza uma busca inválida', () => {
+    it('Realizar uma busca inválida', () => {
         cy.start()
 
         cy.get('#twotabsearchtextbox').click()
-            .type('produtoinválido111');
+            .type('XPT123ProdutoInexistente');
 
         cy.get('#nav-search-submit-button').click()
-   
-        cy.get('span.a-color-state.a-text-bold')
-            .should('contain.text', 'Nenhum resultado para produto inválido 111');   
-    });
 
-   });
+        cy.get('span.a-size-medium.a-color-base.a-text-normal')
+            .should('contain.text', 'Nenhum resultado para');  
+    });
+});
