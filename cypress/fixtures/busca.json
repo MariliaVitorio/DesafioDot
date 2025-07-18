@@ -1,0 +1,11 @@
+{
+  "pesquisaBlusa": {
+    "termo": "blusa crochê inverno",
+    "produto": "Moletom feminino térmico básico de crochê para mulheres"
+  },
+  "pesquisaAlexa": {
+    "termo": "Alexa",
+    "produto": "Echo com Alexa (Última geração)"
+  },
+  "pesquisaInvalida": "XPT123ProdutoInexistente"
+}
