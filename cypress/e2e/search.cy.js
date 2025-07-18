@@ -17,4 +17,16 @@ describe('Busca na Amazon', () => {
    
     });
 
+    it('Realiza uma busca inválida', () => {
+        cy.start()
+
+        cy.get('#twotabsearchtextbox').click()
+            .type('produtoinválido111');
+
+        cy.get('#nav-search-submit-button').click()
+   
+        cy.get('span.a-color-state.a-text-bold')
+            .should('contain.text', 'Nenhum resultado para produto inválido 111');   
+    });
+
    });
