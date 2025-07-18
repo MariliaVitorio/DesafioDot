@@ -32,3 +32,5 @@ Cypress.Commands.add('start', () => {
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false;
 });
+
+
