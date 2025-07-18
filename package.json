@@ -1,5 +1,5 @@
 {
-  "devDependencies": {
+    "devDependencies": {
     "cypress": "^14.5.2"
   },
   "dependencies": {
@@ -10,6 +10,8 @@
   "description": "Repositório de automação de testes end-to-end com Cypress aplicado ao site amazon.com.br, criado como parte de um desafio técnico.",
   "main": "cypress.config.js",
   "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,7 @@
     "url": "git+https://github.com/MariliaVitorio/DesafioDot.git"
   },
   "keywords": [],
-  "author": "Marilia",
+  "author": "Marilia Vitório",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MariliaVitorio/DesafioDot/issues"

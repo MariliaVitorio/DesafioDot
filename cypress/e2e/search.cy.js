@@ -1,5 +1,5 @@
 describe('Busca na Amazon', () => {
-    it('Realizar uma busca válida', () => {
+    it.only('Realizar uma busca válida', () => {
         cy.start()
 
         cy.get('#twotabsearchtextbox').click()
