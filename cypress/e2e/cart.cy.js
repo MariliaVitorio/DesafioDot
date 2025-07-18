@@ -22,7 +22,7 @@ describe('Carrinho', () => {
         cy.get('#sc-buy-box-ptc-button > .a-button-inner > .a-button-input').click()
     });
 
-    it.only('Remover produto do carrinho', () => {
+    it('Remover produto do carrinho', () => {
         cy.start()
 
         cy.get('#twotabsearchtextbox').click()
